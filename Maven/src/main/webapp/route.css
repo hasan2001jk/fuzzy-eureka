@@ -1,0 +1,295 @@
+@charset "UTF-8";
+*{
+	margin: 0; 
+	padding: 0;
+}
+
+body{
+	background-image:url("./img/fon_2.jpg");
+	background-repeat:no-repeat;
+	
+}
+
+.container{
+	max-width:1200px;
+	margin:0 auto;	
+
+}
+
+
+
+
+
+
+.body-wrapper{
+	background-color:rgb(34%, 32%, 32%, 0.1);
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:10px;
+	margin-top:50px;
+}
+
+.center-wrapper{
+	margin:10px 0px 10px 0px;
+
+}
+
+.left-side{
+	background-color:rgb(95%, 48%, 9%, 0.9);
+	width:350px;
+	text-align:center;
+	height:350px;
+	font-family: 'Itim', cursive;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 14px;
+	border-bottom-left-radius: 2px;
+
+}
+
+.text{
+	padding-top:90px;
+	line-height:1.5;
+}
+
+.left-side-header{
+	color:white;
+	font-size:25px;
+	font-weight:bold;
+}
+
+ul{
+	
+	color:#009494;
+	font-size:20px;
+	font-weight:italic;
+}
+.article{
+	background-color:rgb(95%, 48%, 9%, 0.9);
+	width:650px;
+	height:350px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}
+
+@keyframes text{
+	15% {color:yellow;}
+	30% {color:lightblue;}
+	45% {color:lightred;}
+	60% {color:#edd1bb;}
+	75% {color:aqua;}
+	100% {color:white;}
+}
+
+.article .article-title{
+	color:white;
+	text-align:center;
+	font-family:'Itim', cursive;
+	font-size:30px;
+	font-weight:bold;
+	animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.article .article-subtitle{
+	color:white;
+	text-align:center;
+	font-family:'Itim', cursive;
+	font-size:20px;
+	font-weight:bold;
+	animation-name: text;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+.footer{
+	background:rgba(2, 13, 166, 0.6);
+	height:88px;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	border-radius:5px 5px 1px 1px;
+}
+
+
+@keyframes year{
+	0% {color:red;}
+	15% {color:orange;}
+	35% {color:yellow;}
+	50% {color:green;}
+	65% {color:lightblue;}
+	75% {color:blue;}
+	100%{color:purple;}
+}
+
+
+.footer .footer-year{
+	width:200px;
+	/*background-color:#806b2a;*/	
+	text-align:center;
+	margin-top:auto;
+	margin-bottom:auto;
+	font-family: 'Raleway Dots';
+	color:white;
+	font-weight:bold;
+	font-size:30px;
+	animation-name: year;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.footer .footer-theme{
+	width:200px;
+	margin-top:auto;
+	margin-bottom:auto;
+	text-align:center;
+
+	
+}
+
+a{
+	text-decoration:none;
+	color:#009494;
+	background:white;
+	border:1px dotted white;
+	border-radius:20px 20px 20px 20px;
+	padding:1px;
+	cursor:pointer;
+	transition:all linear 1.5s;
+}
+
+
+
+.a{
+		font-size:20px;
+	font-weight:italic;
+	font-family:'Itim', cursive;
+	text-decoration:none;
+	color:#009494;
+	background:white;
+	border:1px dotted white;
+	border-radius:20px 20px 20px 20px;
+	padding:1px;
+	cursor:pointer;
+	transition:all linear 1.5s;
+}
+
+.a:hover{
+	background:#ffff33;
+	color:#d5265b !important;
+}
+
+a:hover{
+	background:#ffff33;
+	color:#d5265b !important;
+}
+
+
+.forma{
+	height:100%;
+	text-align:center;
+	margin-top:25px;
+}
+
+.article .forma-button{
+
+	margin-top:202px;
+	margin-bottom:auto;
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	align-items:center;
+
+
+}
+
+
+
+#button{
+	font-family:'Raleway Dots';
+	font-size:20px;
+	border:5px solid #d9d9d9;
+	border-radius:10px 10px 10px 10px;
+	transition: background-color 1s 0.1s ease,color 1s 0.1s ease,border 1s 0.1s ease;
+}
+
+#button:hover{
+	background-color:red;
+	color:white;
+	font-family:'Itim', cursive;
+	font-size:17.5px;
+	border:5px solid #8ac8ff;
+}
+
+.footer-contacts-img{
+	box-shadow:none;
+	transition:all linear 2s;
+}
+
+.footer-contacts-img:hover{
+	box-shadow:-9px -5px 50px 0px #FEFF11;
+}
+
+.footer-contacts-img img{
+	height:25px;
+}
+
+.footer-contacts a{
+	all:unset;
+	font-family: 'Itim', cursive;
+	font-size:15px;
+	transition:all linear 1.5s;
+}
+
+
+.footer-contacts a:hover{
+	font-weight:bold;
+	
+}
+
+
+
+
+
+.footer-contacts .phone{
+	margin:0 auto;
+}
+
+
+.footer-theme #theme{
+	height:35px;
+	border-radius:100px 100px 100px 100px;
+	background-color:none;
+	transition:all linear 1s;	
+}
+
+.footer-theme #theme:hover{
+	background-color:rgba(255,255,0,0.54);
+	
+}
+
+.servlet{
+	width:720px;
+	color:gold;
+	font-family:'Itim', cursive;
+	font-size:20px;
+	text-align:center;	
+	margin:0 auto;
+	margin-top:25px;
+	
+}
+
+.place{
+	width:200px;
+	color:black;
+	font-family:'Itim', cursive;
+	font-size:16px;
+	margin-bottom:5px;
+
+}
